@@ -1,13 +1,14 @@
-import {Link} from 'react-router-dom';
-function Book() {
+
+import "../styles/book.css"
+function Book({image, name, author}) {
   return (
-    <div>Book
+    <div className="book">
+        <img src={image} alt={name} className="photo"/>
 
         <div>
-            <div></div>
+            <div className="author">{author}</div>
         </div>
-        <Link>
-        </Link>
+       
     </div>
   )
 }
